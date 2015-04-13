@@ -14,11 +14,11 @@ function init(){
           transparent: false
         }
       ),
-      new OpenLayers.Layer.Vector("countries",{
+      new OpenLayers.Layer.Vector("World countries",{
         strategies: [new OpenLayers.Strategy.BBOX()],
         protocol: new OpenLayers.Protocol.WFS.v1_1_0({
           url: "http://10.211.55.21:8080/geoserver/wfs",
-          featureType: "World countries",
+          featureType: "countries",
           featureNS: "http://www.naturalearthdata.com/",
           //Mind the geometry column name
           geometryName: "the_geom",
