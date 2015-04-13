@@ -6,7 +6,7 @@ function init(){
     //Add Bule-Marble Layer
     layers: [
       new OpenLayers.Layer.WMS(
-        "Bule Marble",
+        "NASA Bule Marble",
         "http://10.211.55.21:8080/geoserver/wms",
         {
           layers: "NaturalEarth:blueMarble",
@@ -18,7 +18,7 @@ function init(){
         strategies: [new OpenLayers.Strategy.BBOX()],
         protocol: new OpenLayers.Protocol.WFS.v1_1_0({
           url: "http://10.211.55.21:8080/geoserver/wfs",
-          featureType: "countries",
+          featureType: "World countries",
           featureNS: "http://www.naturalearthdata.com/",
           //Mind the geometry column name
           geometryName: "the_geom",
