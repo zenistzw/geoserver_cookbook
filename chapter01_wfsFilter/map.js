@@ -41,7 +41,7 @@ function init(){
           strokeWidth: 3,
           strokeColor: "#000000",
           strokeWidth: 1,
-          fillColor: "#c2e699",
+          fillColor: "#421847",
           fillOpacity: 1
         }),
         filter: new OpenLayers.Filter.Logical({
@@ -93,7 +93,7 @@ function init(){
           strokeWidth: 3,
           strokeColor: "#000000",
           strokeWidth: 1,
-          fillColor: "#238443",
+          fillColor: "#8f3830",
           fillOpacity: 1
         }),
         filter: new OpenLayers.Filter.Logical({
@@ -102,12 +102,12 @@ function init(){
             new OpenLayers.Filter.Comparison({
               type: OpenLayers.Filter.Comparison.EQUAL_TO,
               property: "income_grp",
-              value: "1. High income:OECD"
+              value: "1. High income: OECD"
             }),
             new OpenLayers.Filter.Comparison({
               type: OpenLayers.Filter.Comparison.EQUAL_TO,
               property: "income_grp",
-              value: "2. High income:nonOECD"
+              value: "2. High income: nonOECD"
             })
           ]
         })
