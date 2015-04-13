@@ -16,12 +16,13 @@ function init(){
       ),
       new OpenLayers.Layer.Vector("countries",{
         strategies: [new OpenLayers.Strategy.BBOX()],
-        protocol: new OpenLayers.Protocol.WFS({
+        protocol: new OpenLayers.Protocol.WFS.v1_1_0({
           url: "http://10.211.55.21:8080/geoserver/wfs",
           featureType: "countries",
           featureNS: "http://www.naturalearthdata.com/",
           //Mind the geometry column name
-          geometryName: "the_geom"
+          geometryName: "the_geom",
+          outputFormat: "JSON"
         }),
         styleMap: new OpenLayers.StyleMap({
           strokeWidth: 3,
