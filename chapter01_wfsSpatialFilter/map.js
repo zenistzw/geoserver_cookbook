@@ -8,7 +8,7 @@ function init(){
         protocol: new OpenLayers.Protocol.WFS({
           url: "http://10.211.55.21:8080/geoserver/wfs",
           featureType: "countries",
-          featureNS: "http://www.naturalearth.com/",
+          featureNS: "http://www.naturalearthdata.com/",
           geometryName: "the_geom"
         }),
         styleMap: new OpenLayers.StyleMap({
