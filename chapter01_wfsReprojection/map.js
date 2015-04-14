@@ -3,7 +3,7 @@ function init(){
     div: "myMap",
     //We don't want any layers as base map
     allOverlays: true,
-    projection: "EPSG:4326",
+    projection: "EPSG:3857",
     layers: [
       new OpenLayers.Layer.Vector("countries",{
         strategies: [new OpenLayers.Strategy.BBOX()],
@@ -13,7 +13,7 @@ function init(){
           featureNS: "http://www.naturalearthdata.com/",
           //Mind the geometry column name
           geometryName: "the_geom",
-          srsName: new OpenLayers.Projection("EPSG:4326"),
+          srsName: new OpenLayers.Projection("EPSG:3857"),
           srsNameInQuery: true
         }),
         styleMap: new OpenLayers.StyleMap({
