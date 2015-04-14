@@ -33,5 +33,5 @@ function init(){
     center: [12.48, 42.60],
     zoom: 4
   });
-  map.addControl(new OpenLayers.Control.LayerSwithcher());
+  map.addControl(new OpenLayers.Control.LayerSwitcher());
 }
